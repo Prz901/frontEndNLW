@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import Routes from './routes';
+
+// JSX: Sintaxe de XML dentro do JavaScript
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes />
   );
 }
 
 export default App;
+
+/**
+ * Observaçoes:
+ * Imutabilidade: Entendesse por imutável, algo não esta sujeito a mudar/alterar. É esse conceito que levamos para o estado,
+   pois não conseguimos alterar da maneira tradicional como era feito no javascript antigamente, apenas conseguimos alterar com o método setState.
+ */
